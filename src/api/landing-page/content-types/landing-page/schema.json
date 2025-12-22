@@ -39,6 +39,15 @@
     },
     "seo_description": {
       "type": "string"
+    },
+    "stat1_value": {
+      "type": "integer"
+    },
+    "stat1_suffix": {
+      "type": "string"
+    },
+    "stat1_label": {
+      "type": "text"
     }
   }
 }

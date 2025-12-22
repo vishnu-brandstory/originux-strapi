@@ -460,6 +460,9 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     seo_description: Schema.Attribute.String;
     seo_title: Schema.Attribute.String;
     slug: Schema.Attribute.UID<'title'>;
+    stat1_label: Schema.Attribute.Text;
+    stat1_suffix: Schema.Attribute.String;
+    stat1_value: Schema.Attribute.Integer;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
