@@ -48,6 +48,24 @@
     },
     "stat1_label": {
       "type": "text"
+    },
+    "stat2_value": {
+      "type": "integer"
+    },
+    "stat2_suffix": {
+      "type": "string"
+    },
+    "stat2_label": {
+      "type": "text"
+    },
+    "stat3_value": {
+      "type": "integer"
+    },
+    "stat3_suffix": {
+      "type": "string"
+    },
+    "stat3_label": {
+      "type": "text"
     }
   }
 }

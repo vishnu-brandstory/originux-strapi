@@ -463,6 +463,12 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     stat1_label: Schema.Attribute.Text;
     stat1_suffix: Schema.Attribute.String;
     stat1_value: Schema.Attribute.Integer;
+    stat2_label: Schema.Attribute.Text;
+    stat2_suffix: Schema.Attribute.String;
+    stat2_value: Schema.Attribute.Integer;
+    stat3_label: Schema.Attribute.Text;
+    stat3_suffix: Schema.Attribute.String;
+    stat3_value: Schema.Attribute.Integer;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
