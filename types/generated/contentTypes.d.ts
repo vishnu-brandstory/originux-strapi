@@ -441,6 +441,9 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    approach_content: Schema.Attribute.Text;
+    approach_heading: Schema.Attribute.String;
+    approach_label: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

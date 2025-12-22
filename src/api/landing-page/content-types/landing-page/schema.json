@@ -66,6 +66,15 @@
     },
     "stat3_label": {
       "type": "text"
+    },
+    "approach_label": {
+      "type": "string"
+    },
+    "approach_heading": {
+      "type": "string"
+    },
+    "approach_content": {
+      "type": "text"
     }
   }
 }
