@@ -455,6 +455,7 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     cta_subheading: Schema.Attribute.String;
     empower_heading: Schema.Attribute.String;
     empower_items: Schema.Attribute.Component<'section.empower-item', true>;
+    empower_para: Schema.Attribute.Text;
     hero_description: Schema.Attribute.Text;
     hero_heading: Schema.Attribute.Text;
     hero_image: Schema.Attribute.Media<

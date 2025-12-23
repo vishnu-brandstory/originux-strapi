@@ -97,6 +97,9 @@
     "empower_heading": {
       "type": "string"
     },
+    "empower_para": {
+      "type": "text"
+    },
     "empower_items": {
       "type": "component",
       "component": "section.empower-item",
