@@ -75,6 +75,24 @@
     },
     "approach_content": {
       "type": "text"
+    },
+    "cta_enable": {
+      "type": "boolean"
+    },
+    "cta_heading": {
+      "type": "string"
+    },
+    "cta_subheading": {
+      "type": "string"
+    },
+    "cta_description": {
+      "type": "text"
+    },
+    "cta_button_text": {
+      "type": "string"
+    },
+    "cta_button_url": {
+      "type": "string"
     }
   }
 }

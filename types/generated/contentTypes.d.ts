@@ -447,6 +447,12 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta_button_text: Schema.Attribute.String;
+    cta_button_url: Schema.Attribute.String;
+    cta_description: Schema.Attribute.Text;
+    cta_enable: Schema.Attribute.Boolean;
+    cta_heading: Schema.Attribute.String;
+    cta_subheading: Schema.Attribute.String;
     hero_description: Schema.Attribute.Text;
     hero_heading: Schema.Attribute.Text;
     hero_image: Schema.Attribute.Media<
