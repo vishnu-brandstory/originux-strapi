@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_core_service_items",
+  "info": {
+    "displayName": "core-service-item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

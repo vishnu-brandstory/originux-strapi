@@ -444,6 +444,12 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     approach_content: Schema.Attribute.Text;
     approach_heading: Schema.Attribute.String;
     approach_label: Schema.Attribute.String;
+    core_service_heading: Schema.Attribute.String;
+    core_service_items: Schema.Attribute.Component<
+      'section.core-service-item',
+      true
+    >;
+    core_service_para: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

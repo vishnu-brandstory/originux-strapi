@@ -104,6 +104,17 @@
       "type": "component",
       "component": "section.empower-item",
       "repeatable": true
+    },
+    "core_service_heading": {
+      "type": "string"
+    },
+    "core_service_para": {
+      "type": "text"
+    },
+    "core_service_items": {
+      "type": "component",
+      "component": "section.core-service-item",
+      "repeatable": true
     }
   }
 }
