@@ -468,6 +468,8 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    journey_heading: Schema.Attribute.String;
+    journey_items: Schema.Attribute.Component<'section.journey-items', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -478,6 +480,11 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     seo_description: Schema.Attribute.String;
     seo_title: Schema.Attribute.String;
     slug: Schema.Attribute.UID<'title'>;
+    solution_detail_heading: Schema.Attribute.String;
+    solution_details: Schema.Attribute.Component<
+      'section.solution-details',
+      true
+    >;
     stat1_label: Schema.Attribute.Text;
     stat1_suffix: Schema.Attribute.String;
     stat1_value: Schema.Attribute.Integer;

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_section_solution_details",
+  "info": {
+    "displayName": "solution_details"
+  },
+  "options": {},
+  "attributes": {
+    "number_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

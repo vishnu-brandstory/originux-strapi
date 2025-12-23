@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_journey_items",
+  "info": {
+    "displayName": "journey_items"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

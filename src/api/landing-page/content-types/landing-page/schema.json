@@ -115,6 +115,22 @@
       "type": "component",
       "component": "section.core-service-item",
       "repeatable": true
+    },
+    "journey_heading": {
+      "type": "string"
+    },
+    "journey_items": {
+      "type": "component",
+      "component": "section.journey-items",
+      "repeatable": true
+    },
+    "solution_detail_heading": {
+      "type": "string"
+    },
+    "solution_details": {
+      "type": "component",
+      "component": "section.solution-details",
+      "repeatable": true
     }
   }
 }
