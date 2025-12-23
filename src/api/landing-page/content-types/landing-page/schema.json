@@ -93,6 +93,11 @@
     },
     "cta_button_url": {
       "type": "string"
+    },
+    "empower_items": {
+      "type": "component",
+      "component": "section.empower-item",
+      "repeatable": true
     }
   }
 }
