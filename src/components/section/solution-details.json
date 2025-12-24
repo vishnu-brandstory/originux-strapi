@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "number_image": {
+    "num_img": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

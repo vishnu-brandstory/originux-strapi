@@ -40,9 +40,7 @@ export interface SectionSolutionDetails extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    number_image: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
+    num_img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;
   };
 }
