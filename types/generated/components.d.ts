@@ -22,6 +22,18 @@ export interface SectionEmpowerItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionExperienceStudioItem extends Struct.ComponentSchema {
+  collectionName: 'components_section_experience_studio_items';
+  info: {
+    displayName: 'experience_studio_item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionJourneyItems extends Struct.ComponentSchema {
   collectionName: 'components_section_journey_items';
   info: {
@@ -50,6 +62,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'section.core-service-item': SectionCoreServiceItem;
       'section.empower-item': SectionEmpowerItem;
+      'section.experience-studio-item': SectionExperienceStudioItem;
       'section.journey-items': SectionJourneyItems;
       'section.solution-details': SectionSolutionDetails;
     }

@@ -131,6 +131,14 @@
       "type": "component",
       "component": "section.solution-details",
       "repeatable": true
+    },
+    "experience_studio_heading": {
+      "type": "string"
+    },
+    "experience_studio_item": {
+      "type": "component",
+      "component": "section.experience-studio-item",
+      "repeatable": true
     }
   }
 }
