@@ -503,6 +503,11 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    why_partner_content: Schema.Attribute.Text;
+    why_partner_heading: Schema.Attribute.String;
+    why_partner_imag: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
   };
 }
 
