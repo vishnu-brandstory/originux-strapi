@@ -146,7 +146,7 @@
     "why_partner_content": {
       "type": "text"
     },
-    "why_partner_imag": {
+    "why_partner_image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

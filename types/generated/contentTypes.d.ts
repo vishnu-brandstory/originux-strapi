@@ -505,7 +505,7 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     why_partner_content: Schema.Attribute.Text;
     why_partner_heading: Schema.Attribute.String;
-    why_partner_imag: Schema.Attribute.Media<
+    why_partner_image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
   };
