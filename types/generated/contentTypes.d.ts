@@ -442,6 +442,7 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
   };
   attributes: {
     advantage_item: Schema.Attribute.Component<'section.advantage-item', true>;
+    advantageHeading: Schema.Attribute.String;
     approach_content: Schema.Attribute.Text;
     approach_heading: Schema.Attribute.String;
     approach_label: Schema.Attribute.String;

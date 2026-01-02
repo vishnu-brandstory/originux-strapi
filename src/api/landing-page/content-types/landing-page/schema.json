@@ -156,6 +156,9 @@
         "audios"
       ]
     },
+    "advantageHeading": {
+      "type": "string"
+    },
     "advantage_item": {
       "type": "component",
       "component": "section.advantage-item",
