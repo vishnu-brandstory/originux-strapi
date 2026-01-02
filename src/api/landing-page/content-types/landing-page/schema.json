@@ -155,6 +155,11 @@
         "videos",
         "audios"
       ]
+    },
+    "advantage_item": {
+      "type": "component",
+      "component": "section.advantage-item",
+      "repeatable": true
     }
   }
 }

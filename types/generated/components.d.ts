@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SectionAdvantageItem extends Struct.ComponentSchema {
+  collectionName: 'components_section_advantage_items';
+  info: {
+    displayName: 'advantage_item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionCoreServiceItem extends Struct.ComponentSchema {
   collectionName: 'components_section_core_service_items';
   info: {
@@ -60,6 +71,7 @@ export interface SectionSolutionDetails extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'section.advantage-item': SectionAdvantageItem;
       'section.core-service-item': SectionCoreServiceItem;
       'section.empower-item': SectionEmpowerItem;
       'section.experience-studio-item': SectionExperienceStudioItem;
