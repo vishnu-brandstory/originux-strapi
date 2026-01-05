@@ -75,10 +75,7 @@ export interface SectionToolkitItems extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    icons: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;
   };
 }
