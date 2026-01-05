@@ -171,6 +171,11 @@
       "type": "component",
       "component": "section.toolkit-items",
       "repeatable": true
+    },
+    "faq_item": {
+      "type": "component",
+      "component": "section.faq-item",
+      "repeatable": true
     }
   }
 }

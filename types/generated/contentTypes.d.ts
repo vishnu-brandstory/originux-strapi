@@ -469,6 +469,7 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
       'section.experience-studio-item',
       true
     >;
+    faq_item: Schema.Attribute.Component<'section.faq-item', true>;
     hero_description: Schema.Attribute.Text;
     hero_heading: Schema.Attribute.Text;
     hero_image: Schema.Attribute.Media<

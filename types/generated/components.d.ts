@@ -45,6 +45,17 @@ export interface SectionExperienceStudioItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionFaqItem extends Struct.ComponentSchema {
+  collectionName: 'components_section_faq_items';
+  info: {
+    displayName: 'faq_item';
+  };
+  attributes: {
+    answer: Schema.Attribute.Text;
+    question: Schema.Attribute.String;
+  };
+}
+
 export interface SectionJourneyItems extends Struct.ComponentSchema {
   collectionName: 'components_section_journey_items';
   info: {
@@ -89,6 +100,7 @@ declare module '@strapi/strapi' {
       'section.core-service-item': SectionCoreServiceItem;
       'section.empower-item': SectionEmpowerItem;
       'section.experience-studio-item': SectionExperienceStudioItem;
+      'section.faq-item': SectionFaqItem;
       'section.journey-items': SectionJourneyItems;
       'section.solution-details': SectionSolutionDetails;
       'section.toolkit-items': SectionToolkitItems;
