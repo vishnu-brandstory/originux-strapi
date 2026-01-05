@@ -176,6 +176,9 @@
       "type": "component",
       "component": "section.faq-item",
       "repeatable": true
+    },
+    "faq_heading": {
+      "type": "string"
     }
   }
 }
