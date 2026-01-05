@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_section_toolkit_items",
+  "info": {
+    "displayName": "toolkit_items"
+  },
+  "options": {},
+  "attributes": {
+    "icons": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

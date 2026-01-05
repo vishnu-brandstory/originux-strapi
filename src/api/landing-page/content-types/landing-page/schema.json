@@ -163,6 +163,14 @@
       "type": "component",
       "component": "section.advantage-item",
       "repeatable": true
+    },
+    "toolkit_heading": {
+      "type": "string"
+    },
+    "toolkit_items": {
+      "type": "component",
+      "component": "section.toolkit-items",
+      "repeatable": true
     }
   }
 }

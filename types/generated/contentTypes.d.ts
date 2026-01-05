@@ -502,6 +502,8 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     stat3_suffix: Schema.Attribute.String;
     stat3_value: Schema.Attribute.Integer;
     title: Schema.Attribute.String;
+    toolkit_heading: Schema.Attribute.String;
+    toolkit_items: Schema.Attribute.Component<'section.toolkit-items', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

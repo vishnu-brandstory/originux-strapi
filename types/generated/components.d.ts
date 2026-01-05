@@ -68,6 +68,21 @@ export interface SectionSolutionDetails extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionToolkitItems extends Struct.ComponentSchema {
+  collectionName: 'components_section_toolkit_items';
+  info: {
+    displayName: 'toolkit_items';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icons: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -77,6 +92,7 @@ declare module '@strapi/strapi' {
       'section.experience-studio-item': SectionExperienceStudioItem;
       'section.journey-items': SectionJourneyItems;
       'section.solution-details': SectionSolutionDetails;
+      'section.toolkit-items': SectionToolkitItems;
     }
   }
 }
