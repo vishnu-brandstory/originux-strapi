@@ -11,7 +11,7 @@
     "description": {
       "type": "text"
     },
-    "icon": {
+    "toolkit_icons": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
