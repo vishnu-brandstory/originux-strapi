@@ -10,6 +10,9 @@
     },
     "answer": {
       "type": "text"
+    },
+    "open_by_default": {
+      "type": "boolean"
     }
   },
   "config": {}

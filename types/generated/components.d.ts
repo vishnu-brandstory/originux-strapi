@@ -52,6 +52,7 @@ export interface SectionFaqItem extends Struct.ComponentSchema {
   };
   attributes: {
     answer: Schema.Attribute.Text;
+    open_by_default: Schema.Attribute.Boolean;
     question: Schema.Attribute.String;
   };
 }
