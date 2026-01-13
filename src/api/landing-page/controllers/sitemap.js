@@ -5,9 +5,7 @@ module.exports = {
     const pages = await strapi.entityService.findMany(
       'api::landing-page.landing-page',
       {
-        filters: {
-          publishedAt: { $notNull: true }
-        },
+        locale: 'all',         
         fields: ['slug', 'updatedAt'],
         sort: { updatedAt: 'desc' }
       }
