@@ -12,7 +12,8 @@
       "type": "blocks"
     },
     "active": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   },
   "config": {}

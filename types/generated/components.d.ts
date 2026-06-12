@@ -140,7 +140,7 @@ export interface SectionFaqContent extends Struct.ComponentSchema {
     displayName: 'faq content';
   };
   attributes: {
-    active: Schema.Attribute.Boolean;
+    active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     answer: Schema.Attribute.Blocks;
     question: Schema.Attribute.String;
   };
