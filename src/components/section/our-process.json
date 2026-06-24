@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_our_processes",
+  "info": {
+    "displayName": "Our Process"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "process_cards": {
+      "type": "component",
+      "component": "section.process-cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

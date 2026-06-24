@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_cta_sections",
+  "info": {
+    "displayName": "CTA Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

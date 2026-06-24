@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "seo_title": {
+      "type": "string"
+    },
+    "seo_description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "US",
+        "IN"
+      ]
+    },
+    "hero": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": false
+    },
+    "Results": {
+      "type": "component",
+      "component": "section.result",
+      "repeatable": false
+    },
+    "our_approach": {
+      "type": "component",
+      "component": "section.our-approachs",
+      "repeatable": false
+    },
+    "cta_section": {
+      "type": "component",
+      "component": "section.cta-section",
+      "repeatable": false
+    },
+    "Industries": {
+      "type": "component",
+      "component": "section.industries",
+      "repeatable": false
+    },
+    "services": {
+      "type": "component",
+      "component": "section.services-section",
+      "repeatable": false
+    },
+    "our_process": {
+      "type": "component",
+      "component": "section.our-process",
+      "repeatable": false
+    },
+    "we_offer": {
+      "type": "component",
+      "component": "section.we-offer",
+      "repeatable": false
+    },
+    "business_types": {
+      "type": "component",
+      "component": "section.business-types",
+      "repeatable": false
+    },
+    "why_choose_us": {
+      "type": "component",
+      "component": "section.why",
+      "repeatable": false
+    },
+    "key_benefits": {
+      "type": "component",
+      "component": "section.key-benefits",
+      "repeatable": false
+    },
+    "location_faqs": {
+      "type": "component",
+      "component": "section.location-faqs",
+      "repeatable": false
+    },
+    "footer_cta": {
+      "type": "component",
+      "component": "section.footer-cta",
+      "repeatable": false
+    }
+  }
+}

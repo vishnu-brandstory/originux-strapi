@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_key_benefits",
+  "info": {
+    "displayName": "key Benefits"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "benefits_cards": {
+      "type": "component",
+      "component": "section.key-benefits-cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

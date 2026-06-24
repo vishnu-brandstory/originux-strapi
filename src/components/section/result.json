@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_section_results",
+  "info": {
+    "displayName": "Result"
+  },
+  "options": {},
+  "attributes": {
+    "our_results": {
+      "type": "component",
+      "component": "section.our-results",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

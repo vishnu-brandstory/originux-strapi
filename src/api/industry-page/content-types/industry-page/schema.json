@@ -53,6 +53,11 @@
       "type": "component",
       "component": "section.cta",
       "repeatable": false
+    },
+    "footer_cta": {
+      "type": "component",
+      "component": "section.footer-cta",
+      "repeatable": false
     }
   }
 }

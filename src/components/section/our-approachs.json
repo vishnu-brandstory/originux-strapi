@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_section_our_approachs",
+  "info": {
+    "displayName": "our_approachs"
+  },
+  "options": {},
+  "attributes": {
+    "sub_heading": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_location_faqs",
+  "info": {
+    "displayName": "Location Faq"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "faqs_items": {
+      "type": "component",
+      "component": "section.faqs-cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

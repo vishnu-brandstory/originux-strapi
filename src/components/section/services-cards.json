@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_services_cards",
+  "info": {
+    "displayName": "services_cards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

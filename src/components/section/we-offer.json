@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_we_offers",
+  "info": {
+    "displayName": "We Offer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "offer_cards": {
+      "type": "component",
+      "component": "section.offer-cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

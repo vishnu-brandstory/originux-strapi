@@ -56,6 +56,29 @@ export interface SectionBenefitsCards extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionBusinessCards extends Struct.ComponentSchema {
+  collectionName: 'components_section_business_cards';
+  info: {
+    displayName: 'business-cards';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionBusinessTypes extends Struct.ComponentSchema {
+  collectionName: 'components_section_business_types';
+  info: {
+    displayName: 'Business Types';
+  };
+  attributes: {
+    business_cards: Schema.Attribute.Component<'section.business-cards', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionCards extends Struct.ComponentSchema {
   collectionName: 'components_section_cards';
   info: {
@@ -100,6 +123,20 @@ export interface SectionCta extends Struct.ComponentSchema {
     button_url: Schema.Attribute.String;
     paragraph: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionCtaSection extends Struct.ComponentSchema {
+  collectionName: 'components_section_cta_sections';
+  info: {
+    displayName: 'CTA Section';
+  };
+  attributes: {
+    button_text: Schema.Attribute.String;
+    description: Schema.Attribute.Blocks;
+    sub_heading: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
   };
 }
 
@@ -158,6 +195,17 @@ export interface SectionFaqItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionFaqsCards extends Struct.ComponentSchema {
+  collectionName: 'components_section_faqs_cards';
+  info: {
+    displayName: 'Faqs cards';
+  };
+  attributes: {
+    answer: Schema.Attribute.Blocks;
+    question: Schema.Attribute.String;
+  };
+}
+
 export interface SectionFaqsItems extends Struct.ComponentSchema {
   collectionName: 'components_section_faqs_items';
   info: {
@@ -177,6 +225,20 @@ export interface SectionFaqsTems extends Struct.ComponentSchema {
   attributes: {};
 }
 
+export interface SectionFooterCta extends Struct.ComponentSchema {
+  collectionName: 'components_section_footer_ctas';
+  info: {
+    displayName: 'Footer Cta';
+  };
+  attributes: {
+    button_text: Schema.Attribute.String;
+    button_url: Schema.Attribute.String;
+    description: Schema.Attribute.Blocks;
+    sub_heading: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionFrequentlyAskedQuestions
   extends Struct.ComponentSchema {
   collectionName: 'components_section_frequently_asked_questions';
@@ -185,6 +247,44 @@ export interface SectionFrequentlyAskedQuestions
   };
   attributes: {
     faqs_items: Schema.Attribute.Component<'section.faqs-tems', false>;
+  };
+}
+
+export interface SectionHero extends Struct.ComponentSchema {
+  collectionName: 'components_section_heroes';
+  info: {
+    displayName: 'Hero';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionIndustries extends Struct.ComponentSchema {
+  collectionName: 'components_section_industries';
+  info: {
+    displayName: 'Industries';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    Heading: Schema.Attribute.String;
+    industries_cards: Schema.Attribute.Component<
+      'section.industries-cards',
+      true
+    >;
+  };
+}
+
+export interface SectionIndustriesCards extends Struct.ComponentSchema {
+  collectionName: 'components_section_industries_cards';
+  info: {
+    displayName: 'industries-cards';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -199,6 +299,55 @@ export interface SectionJourneyItems extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionKeyBenefits extends Struct.ComponentSchema {
+  collectionName: 'components_section_key_benefits';
+  info: {
+    displayName: 'key Benefits';
+  };
+  attributes: {
+    benefits_cards: Schema.Attribute.Component<
+      'section.key-benefits-cards',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionKeyBenefitsCards extends Struct.ComponentSchema {
+  collectionName: 'components_section_key_benefits_cards';
+  info: {
+    displayName: 'key_benefits_cards';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionLocationFaqs extends Struct.ComponentSchema {
+  collectionName: 'components_section_location_faqs';
+  info: {
+    displayName: 'Location Faq';
+  };
+  attributes: {
+    faqs_items: Schema.Attribute.Component<'section.faqs-cards', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionOfferCards extends Struct.ComponentSchema {
+  collectionName: 'components_section_offer_cards';
+  info: {
+    displayName: 'offer-cards';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    number: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionOurApproach extends Struct.ComponentSchema {
   collectionName: 'components_section_our_approaches';
   info: {
@@ -207,6 +356,62 @@ export interface SectionOurApproach extends Struct.ComponentSchema {
   attributes: {
     approach: Schema.Attribute.Component<'section.approach', true>;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionOurApproachs extends Struct.ComponentSchema {
+  collectionName: 'components_section_our_approachs';
+  info: {
+    displayName: 'our_approachs';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    sub_heading: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionOurProcess extends Struct.ComponentSchema {
+  collectionName: 'components_section_our_processes';
+  info: {
+    displayName: 'Our Process';
+  };
+  attributes: {
+    process_cards: Schema.Attribute.Component<'section.process-cards', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionOurResults extends Struct.ComponentSchema {
+  collectionName: 'components_section_our_results';
+  info: {
+    displayName: 'Our Results';
+  };
+  attributes: {
+    Suffix: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
+    value: Schema.Attribute.Integer;
+  };
+}
+
+export interface SectionProcessCards extends Struct.ComponentSchema {
+  collectionName: 'components_section_process_cards';
+  info: {
+    displayName: 'process_cards';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionResult extends Struct.ComponentSchema {
+  collectionName: 'components_section_results';
+  info: {
+    displayName: 'Result';
+  };
+  attributes: {
+    our_results: Schema.Attribute.Component<'section.our-results', true>;
   };
 }
 
@@ -229,6 +434,29 @@ export interface SectionServices extends Struct.ComponentSchema {
   };
   attributes: {
     cards: Schema.Attribute.Component<'section.cards', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionServicesCards extends Struct.ComponentSchema {
+  collectionName: 'components_section_services_cards';
+  info: {
+    displayName: 'services_cards';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionServicesSection extends Struct.ComponentSchema {
+  collectionName: 'components_section_services_sections';
+  info: {
+    displayName: 'services_section';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    services_cards: Schema.Attribute.Component<'section.services-cards', true>;
     title: Schema.Attribute.String;
   };
 }
@@ -280,6 +508,17 @@ export interface SectionToolkitItems extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionWeOffer extends Struct.ComponentSchema {
+  collectionName: 'components_section_we_offers';
+  info: {
+    displayName: 'We Offer';
+  };
+  attributes: {
+    offer_cards: Schema.Attribute.Component<'section.offer-cards', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionWhy extends Struct.ComponentSchema {
   collectionName: 'components_section_whies';
   info: {
@@ -311,26 +550,46 @@ declare module '@strapi/strapi' {
       'section.banner': SectionBanner;
       'section.benefits': SectionBenefits;
       'section.benefits-cards': SectionBenefitsCards;
+      'section.business-cards': SectionBusinessCards;
+      'section.business-types': SectionBusinessTypes;
       'section.cards': SectionCards;
       'section.core-service-item': SectionCoreServiceItem;
       'section.core-service-items-new': SectionCoreServiceItemsNew;
       'section.cta': SectionCta;
+      'section.cta-section': SectionCtaSection;
       'section.empower-item': SectionEmpowerItem;
       'section.experience-studio-item': SectionExperienceStudioItem;
       'section.faq': SectionFaq;
       'section.faq-content': SectionFaqContent;
       'section.faq-item': SectionFaqItem;
+      'section.faqs-cards': SectionFaqsCards;
       'section.faqs-items': SectionFaqsItems;
       'section.faqs-tems': SectionFaqsTems;
+      'section.footer-cta': SectionFooterCta;
       'section.frequently-asked-questions': SectionFrequentlyAskedQuestions;
+      'section.hero': SectionHero;
+      'section.industries': SectionIndustries;
+      'section.industries-cards': SectionIndustriesCards;
       'section.journey-items': SectionJourneyItems;
+      'section.key-benefits': SectionKeyBenefits;
+      'section.key-benefits-cards': SectionKeyBenefitsCards;
+      'section.location-faqs': SectionLocationFaqs;
+      'section.offer-cards': SectionOfferCards;
       'section.our-approach': SectionOurApproach;
+      'section.our-approachs': SectionOurApproachs;
+      'section.our-process': SectionOurProcess;
+      'section.our-results': SectionOurResults;
+      'section.process-cards': SectionProcessCards;
+      'section.result': SectionResult;
       'section.seo': SectionSeo;
       'section.services': SectionServices;
+      'section.services-cards': SectionServicesCards;
+      'section.services-section': SectionServicesSection;
       'section.solution-details': SectionSolutionDetails;
       'section.solution-details-new': SectionSolutionDetailsNew;
       'section.solution-details-test': SectionSolutionDetailsTest;
       'section.toolkit-items': SectionToolkitItems;
+      'section.we-offer': SectionWeOffer;
       'section.why': SectionWhy;
       'section.why-content': SectionWhyContent;
     }

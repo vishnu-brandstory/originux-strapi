@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_section_offer_cards",
+  "info": {
+    "displayName": "offer-cards"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_process_cards",
+  "info": {
+    "displayName": "process_cards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

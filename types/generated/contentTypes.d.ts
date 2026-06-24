@@ -459,6 +459,7 @@ export interface ApiIndustryPageIndustryPage
       Schema.Attribute.Private;
     cta: Schema.Attribute.Component<'section.cta', false>;
     faqs_items: Schema.Attribute.Component<'section.faqs-items', false>;
+    footer_cta: Schema.Attribute.Component<'section.footer-cta', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -561,6 +562,51 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     why_partner_image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+  };
+}
+
+export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
+  collectionName: 'locations';
+  info: {
+    displayName: 'Location';
+    pluralName: 'locations';
+    singularName: 'location';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    business_types: Schema.Attribute.Component<'section.business-types', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta_section: Schema.Attribute.Component<'section.cta-section', false>;
+    footer_cta: Schema.Attribute.Component<'section.footer-cta', false>;
+    hero: Schema.Attribute.Component<'section.hero', false>;
+    Industries: Schema.Attribute.Component<'section.industries', false>;
+    key_benefits: Schema.Attribute.Component<'section.key-benefits', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::location.location'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.Enumeration<['US', 'IN']>;
+    location_faqs: Schema.Attribute.Component<'section.location-faqs', false>;
+    our_approach: Schema.Attribute.Component<'section.our-approachs', false>;
+    our_process: Schema.Attribute.Component<'section.our-process', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    Results: Schema.Attribute.Component<'section.result', false>;
+    seo_description: Schema.Attribute.Text;
+    seo_title: Schema.Attribute.String;
+    services: Schema.Attribute.Component<'section.services-section', false>;
+    slug: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    we_offer: Schema.Attribute.Component<'section.we-offer', false>;
+    why_choose_us: Schema.Attribute.Component<'section.why', false>;
   };
 }
 
@@ -1077,6 +1123,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::industry-page.industry-page': ApiIndustryPageIndustryPage;
       'api::landing-page.landing-page': ApiLandingPageLandingPage;
+      'api::location.location': ApiLocationLocation;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

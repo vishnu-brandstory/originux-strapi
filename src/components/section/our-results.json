@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_section_our_results",
+  "info": {
+    "displayName": "Our Results"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "integer"
+    },
+    "Suffix": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

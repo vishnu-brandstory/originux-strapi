@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_footer_ctas",
+  "info": {
+    "displayName": "Footer Cta"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "button_url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

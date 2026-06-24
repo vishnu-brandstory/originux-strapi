@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_industries_cards",
+  "info": {
+    "displayName": "industries-cards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
