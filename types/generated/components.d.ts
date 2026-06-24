@@ -79,6 +79,31 @@ export interface SectionBusinessTypes extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionBusinessValue extends Struct.ComponentSchema {
+  collectionName: 'components_section_business_values';
+  info: {
+    displayName: 'Business Value';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    value_cards: Schema.Attribute.Component<
+      'section.bussiness-value-card',
+      true
+    >;
+  };
+}
+
+export interface SectionBussinessValueCard extends Struct.ComponentSchema {
+  collectionName: 'components_section_bussiness_value_cards';
+  info: {
+    displayName: 'Bussiness value card';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionCards extends Struct.ComponentSchema {
   collectionName: 'components_section_cards';
   info: {
@@ -508,6 +533,28 @@ export interface SectionToolkitItems extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionValueCards extends Struct.ComponentSchema {
+  collectionName: 'components_section_value_cards';
+  info: {
+    displayName: 'value cards';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionValueDelivered extends Struct.ComponentSchema {
+  collectionName: 'components_section_value_delivereds';
+  info: {
+    displayName: 'Value Delivered';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    value_cards: Schema.Attribute.Component<'section.value-cards', true>;
+  };
+}
+
 export interface SectionWeOffer extends Struct.ComponentSchema {
   collectionName: 'components_section_we_offers';
   info: {
@@ -552,6 +599,8 @@ declare module '@strapi/strapi' {
       'section.benefits-cards': SectionBenefitsCards;
       'section.business-cards': SectionBusinessCards;
       'section.business-types': SectionBusinessTypes;
+      'section.business-value': SectionBusinessValue;
+      'section.bussiness-value-card': SectionBussinessValueCard;
       'section.cards': SectionCards;
       'section.core-service-item': SectionCoreServiceItem;
       'section.core-service-items-new': SectionCoreServiceItemsNew;
@@ -589,6 +638,8 @@ declare module '@strapi/strapi' {
       'section.solution-details-new': SectionSolutionDetailsNew;
       'section.solution-details-test': SectionSolutionDetailsTest;
       'section.toolkit-items': SectionToolkitItems;
+      'section.value-cards': SectionValueCards;
+      'section.value-delivered': SectionValueDelivered;
       'section.we-offer': SectionWeOffer;
       'section.why': SectionWhy;
       'section.why-content': SectionWhyContent;

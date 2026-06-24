@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_bussiness_value_cards",
+  "info": {
+    "displayName": "Bussiness value card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

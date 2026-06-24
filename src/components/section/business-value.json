@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_business_values",
+  "info": {
+    "displayName": "Business Value"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "value_cards": {
+      "type": "component",
+      "component": "section.bussiness-value-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

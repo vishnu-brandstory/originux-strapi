@@ -80,6 +80,11 @@
       "component": "section.why",
       "repeatable": false
     },
+    "business_value": {
+      "type": "component",
+      "component": "section.business-value",
+      "repeatable": false
+    },
     "key_benefits": {
       "type": "component",
       "component": "section.key-benefits",

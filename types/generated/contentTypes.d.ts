@@ -577,6 +577,7 @@ export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
   };
   attributes: {
     business_types: Schema.Attribute.Component<'section.business-types', false>;
+    business_value: Schema.Attribute.Component<'section.business-value', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
