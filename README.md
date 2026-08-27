@@ -2,6 +2,15 @@
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
+### Location content seeds
+
+Location pages seed on bootstrap from JSON.
+
+1. Live seed file: `data/seeds/originux-web-app-development-location-pages-1200-1400-words.json` (15 US web-app pages). Unique field is `slug`.
+2. If you add another file, list it in `SEED_FILES` in `src/index.js`.
+3. Restart Strapi (`npm run develop`). New slugs are created and published; existing slugs are updated.
+4. Omit all media keys (`Image` / `image`). GPT instructions: `docs/origin-gpt-loction-seed-spec.md`.
+
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
