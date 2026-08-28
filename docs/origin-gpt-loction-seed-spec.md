@@ -598,4 +598,4 @@ Clone `data/seeds/originux-web-app-development-location-pages-1200-1400-words.js
 1. Put JSON in `data/seeds/`.
 2. Add the relative path to `SEED_FILES` in `src/index.js` if it is a new file.
 3. Restart Strapi.
-4. Existing `slug` values are updated. New slugs are created and published.
+4. Existing `slug` values are skipped. New slugs are created and published.

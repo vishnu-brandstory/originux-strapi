@@ -6,6 +6,10 @@ const path = require('path');
 const CONTENT_UID = 'api::location.location';
 const SEED_FILES = [
   'data/seeds/originux-web-app-development-location-pages-1200-1400-words.json',
+  'data/seeds/originux-ai-consulting-company-location-pages-unique.json',
+  'data/seeds/originux-mobile-app-development-company-mumbai.json',
+  'data/seeds/ecommerce-web-development-company-15-location-pages.json',
+  'data/seeds/originux-product-design-15-location-pages-unique-final.json',
 ];
 const MEDIA_KEYS = new Set(['Image', 'image', 'img']);
 
@@ -58,20 +62,13 @@ async function seedFromFile(strapi, relativePath) {
         filters: { slug },
         limit: 1,
       });
-      const data = omitMedia(entry);
-
       if (existing.length > 0) {
-        const updated = await strapi.documents(CONTENT_UID).update({
-          documentId: existing[0].documentId,
-          data,
-          status: 'published',
-        });
-        strapi.log.info(`[seed] updated ${slug} (${updated.documentId})`);
+        strapi.log.info(`[seed] skip existing: ${slug}`);
         continue;
       }
 
       const created = await strapi.documents(CONTENT_UID).create({
-        data,
+        data: omitMedia(entry),
         status: 'published',
       });
 
