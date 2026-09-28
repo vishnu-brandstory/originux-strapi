@@ -11,6 +11,10 @@ const SEED_FILES = [
   'data/seeds/ecommerce-web-development-company-15-location-pages.json',
   'data/seeds/originux-product-design-15-location-pages-unique-final.json',
   'data/seeds/branding-agency-15-us-locations.json',
+  'data/seeds/originux-saas-development-location-pages-15-us.json',
+  'data/seeds/originux-custom-software-development-location-pages-15-us.json',
+  'data/seeds/originux-enterprise-software-development-location-pages-15-us.json',
+  'data/seeds/originux-web-portal-development-location-pages-15-us.json',
 ];
 const MEDIA_KEYS = new Set(['Image', 'image', 'img']);
 
