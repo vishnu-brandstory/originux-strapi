@@ -15,6 +15,13 @@ const SEED_FILES = [
   'data/seeds/originux-custom-software-development-location-pages-15-us.json',
   'data/seeds/originux-enterprise-software-development-location-pages-15-us.json',
   'data/seeds/originux-web-portal-development-location-pages-15-us.json',
+  'data/seeds/originux-conversion-rate-optimisation-15-locations.json',
+  'data/seeds/originux-chatbot-development-15-locations.json',
+  'data/seeds/originux-cross-platform-app-development-15-us-locations.json',
+  'data/seeds/originux-computer-vision-development-15-locations.json',
+  'data/seeds/originux-nlp-development-15-locations.json',
+  'data/seeds/originux-ai-integration-services-15-us-locations.json',
+  'data/seeds/originux-machine-learning-development-15-us-locations.json',
 ];
 const MEDIA_KEYS = new Set(['Image', 'image', 'img']);
 
